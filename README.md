@@ -42,7 +42,7 @@ from src.sockets.client import ReliableSocket
 sock = ReliableSocket(IP, PORT)
 sock.connect()
 print ("session started")
-msg = 'new mesage from client'
+msg = 'new message from client'
 sock.send(msg)
 response = sock.receive(1024)
 print (response)
@@ -52,7 +52,7 @@ Server output
 ```
 listening...
 new session started
-new mesage from client
+new message from client
 ```
 
 Client output
