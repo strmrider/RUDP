@@ -61,3 +61,22 @@ session started
 message received
 ```
 ## API
+**`ReliableServer(ip, port)`**
+* **`listen()`**
+* **`accept()`**
+
+  Accept a session with a client (similar to the TCP socket, just connectionless). Returns a conenction with a client as *ClientConnection* object, usable to send and receive data on the connection.
+  
+* **`shutdown()`**
+
+**ClientConnection** - returns from server's *accept* method
+* **`send(data)`**
+* **`receive(buffer)`**
+* **`close()`**
+
+**`ReliableSocket(ip, port)`**
+* **`connect()`**
+* **`send(data)`**
+* **`receive(buffer)`**
+* **`close()`**
+
