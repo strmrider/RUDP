@@ -35,7 +35,7 @@ while True:
   print (msg)
   session.send('message received')
 ```
-
+Client
 ```Python
 from src.sockets.client import ReliableSocket
 
