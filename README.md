@@ -62,21 +62,51 @@ message received
 ```
 ## API
 **`ReliableServer(ip, port)`**
+
+  Creates a server binded to given ip address and port.
+  
 * **`listen()`**
+
+  listen to income clients.
+  
 * **`accept()`**
 
   Accept a session with a client (similar to the TCP socket, just connectionless). Returns a conenction with a client as *ClientConnection* object, usable to send and receive data on the connection.
   
 * **`shutdown()`**
 
+  Shuts down the server. Active sessions should be closed in advanced to avoid socket exception.
+  
 **ClientConnection** - returns from server's *accept* method
 * **`send(data)`**
+
+  Sends data to clients.
+  
 * **`receive(buffer)`**
+
+  Receives data from clients.
+  
 * **`close()`**
 
+  Close connection.
+
 **`ReliableSocket(ip, port)`**
+
+  Creates a client sokcet. Receives target server ip address and port number.
+  
 * **`connect()`**
+
+  Connect to the server.
+
 * **`send(data)`**
+
+  Sends data to server.
+
 * **`receive(buffer)`**
+
+  Receives data from Server.
+  
 * **`close()`**
+
+  Close session with server.
 
