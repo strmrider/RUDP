@@ -1,0 +1,22 @@
+
+PACKET_HEADER_SIZE = 15
+MTU = 1500
+SEQ_LIMIT = 4000000000
+
+# packets resend
+RESEND_ATTEMPTS = 0 #change
+ACK_TIMEOUT = 0#3
+
+SYN_ATTEMPTS = 3
+SYN_TIMEOUT = 3
+
+FIN_ATTEMPTS = 3
+FIN_TIMEOUT = 3
+
+# packets operations
+SYN = 0
+ACK = 1
+SYN_ACK = 2
+FIN = 3
+FIN_ACK = 4
+PAYLOAD = 5
